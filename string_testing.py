@@ -31,7 +31,7 @@ custom_word_symbols = lowercase_letters + uppercase_letters + digits + symbols
 
 def uppercase_word():  # The function responsible for generating #random words which are in uppercase
     word = ''  # The variable which will hold the random word
-    random_word_length = random.randint(1, 10)  # The random length of the word
+    random_word_length = random.randint(1, settings["max word len"])  # The random length of the word
     while len(word) != random_word_length:  # While loop
         word += random.choice(uppercase_letters)
     return word
@@ -39,7 +39,7 @@ def uppercase_word():  # The function responsible for generating #random words w
 
 def lowercase_word():  # The function responsible for generating #random words which are in uppercase
     word = ''  # The variable which will hold the random word
-    random_word_length = random.randint(1, 10)  # The random length of the word
+    random_word_length = random.randint(1, settings["max word len"])  # The random length of the word
     while len(word) != random_word_length:  # While loop
         word += random.choice(lowercase_letters)
     return word
@@ -47,8 +47,7 @@ def lowercase_word():  # The function responsible for generating #random words w
 
 def custom_word():  # This function generates a word with any mix of characters you like.
     word = ''  # The variable which will hold the random word
-    random_word_length = random.randint(
-        1, settings["max word len"])  # The random length of the word
+    random_word_length = random.randint(1, settings["max word len"])  # The random length of the word
     while len(word) != random_word_length:  # While loop
         word += random.choice(custom_word_symbols)
     return word

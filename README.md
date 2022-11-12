@@ -44,6 +44,6 @@
 - the printf statement prints the same values as we saw in the header so everything is labeled nice. 
 - printf prints to stdout which is redirrected with >> to output_ft.csv or output_OF.csv
 
-##### Final
+### Final
 - Feel free to use this however you like. This will only work for the ft_strrchr function IF you set it up correctly. You will need a new tester function if you want to use with any other functions. 
 - The tester function is easy to make. Basically it takes an input argv[2] and decides which function to use with argv[1].
